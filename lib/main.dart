@@ -19,7 +19,9 @@ class App extends StatelessWidget {
   const App({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyApp(),
@@ -34,14 +36,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(
-      BuildContext context,
-      ) =>
+    BuildContext context,
+  ) =>
       ScreenUtilInit(
         designSize: const Size(
           375,
           812,
         ),
-        builder: (context, child) {
+        builder: (
+          context,
+          child,
+        ) {
           ScreenUtil.init(
             context,
           );
